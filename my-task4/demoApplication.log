@@ -1,0 +1,10 @@
+[main] INFO  com.mycompany.task4.Client  - Hii
+[main] INFO  com.mycompany.task4.Client  - Hii
+[main] INFO  com.mycompany.task4.Client  - Hii
+[main] INFO  com.mycompany.task4.Client  - Hii
+[main] INFO  com.mycompany.task4.Client  - Hii
+[main] INFO  com.mycompany.task4.Client  - Hii
+[main] WARN  com.mycompany.task4.Client  - Warn Message!
+[main] INFO  com.mycompany.task4.Client  - Hii
+[main] DEBUG com.mycompany.task4.Client  - Debug Message!
+[main] WARN  com.mycompany.task4.Client  - Warn Message!
