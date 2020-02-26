@@ -1,11 +1,15 @@
 package com.mycompany.task4;
 
 import java.io.FileDescriptor;
-
+import java.io.FileInputStream;
+import java.io.FileNotFoundException;
+import java.util.Properties;
+import org.apache.log4j.PropertyConfigurator;
 import java.io.FileOutputStream;
+import java.io.IOException;
 import java.io.PrintStream;
 import java.util.Scanner;
-import org.apache.log4j.BasicConfigurator;
+// import org.apache.log4j.BasicConfigurator;
 import org.apache.log4j.LogManager;  
 import org.apache.log4j.Logger;
 
@@ -27,10 +31,14 @@ public class Client
 	static Scanner scan = new Scanner(System.in);
 	static int option;
 	private static final Logger logger = LogManager.getLogger(Client.class);
-	public static void main( String[] args ) 
+	static Properties props = new Properties();
+    
+	public static void main( String[] args ) throws FileNotFoundException, IOException 
     {
-		BasicConfigurator.configure();  
-		logger.info("Client class");  
+		props.load(new FileInputStream("log4j.properties"));
+	    PropertyConfigurator.configure(props);
+		// BasicConfigurator.configure();  
+		logger.info("\nClient class started");  
 		
 		boolean startOver = true;
     	while(startOver)
@@ -63,7 +71,7 @@ public class Client
     }
 	public static void  readInputs(CalculateInterest obj) {
 		try {
-		logger.warn("Please Enter your option within the options given");
+		logger.warn("\nPlease Enter your option within the options given\n");
 		myout.print("Types of Interest   \n 1. Simple Interest \n 2. Compound Interest \n");
     	myout.print("Enter type of Interest : ");
     	option = scan.nextInt();
@@ -85,10 +93,10 @@ public class Client
 	}
 	public static void readInputsCost(CalculateConstructionCost obj) {
 		try {
-		logger.warn("Please Enter the area in sq.feet value less than 15 digits.");
+		logger.warn("\nPlease Enter the area in sq.feet value less than 16 digits.");
 		myout.print("Enter area in sq.feet : ");
-    	int area = scan.nextInt(); 
-    	logger.warn("Choose the option within the given below");
+    	double area = scan.nextInt(); 
+    	logger.warn("\nChoose the option within the given below");
     	myout.print("Types of Materials :  \n 1. Standard Materials \n 2. Above Standard Material \n 3. High Standard material \n");
     	myout.print("Enter type of material that you want : ");
     	int type = scan.nextInt();

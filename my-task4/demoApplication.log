@@ -1,10 +1,9 @@
-[main] INFO  com.mycompany.task4.Client  - Hii
-[main] INFO  com.mycompany.task4.Client  - Hii
-[main] INFO  com.mycompany.task4.Client  - Hii
-[main] INFO  com.mycompany.task4.Client  - Hii
-[main] INFO  com.mycompany.task4.Client  - Hii
-[main] INFO  com.mycompany.task4.Client  - Hii
-[main] WARN  com.mycompany.task4.Client  - Warn Message!
-[main] INFO  com.mycompany.task4.Client  - Hii
-[main] DEBUG com.mycompany.task4.Client  - Debug Message!
-[main] WARN  com.mycompany.task4.Client  - Warn Message!
+[main] INFO  com.mycompany.task4.Client  - 
+Client class started
+[main] WARN  com.mycompany.task4.Client  - 
+Please Enter your option within the options given
+
+[main] WARN  com.mycompany.task4.Client  - 
+Please Enter the area in sq.feet value less than 16 digits.
+[main] WARN  com.mycompany.task4.Client  - 
+Choose the option within the given below

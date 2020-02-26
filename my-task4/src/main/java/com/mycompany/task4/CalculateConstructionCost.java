@@ -1,7 +1,8 @@
 package com.mycompany.task4;
 
 public class CalculateConstructionCost {
-	int type,area;
+	int type;
+	double area;
 	String choice;
 	public double ConstructionCost() {
 		
@@ -26,8 +27,8 @@ public class CalculateConstructionCost {
 		this.type = type;
 	}
 
-	public void setArea(int area) {
-		this.area = area;
+	public void setArea(double area2) {
+		this.area = area2;
 	}
 
 	public void setChoice(String choice) {
